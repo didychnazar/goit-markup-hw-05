@@ -564,27 +564,26 @@
           </ul>
         </div>
         <div class="footer-foorm-order">
+          <p class="footer-order">Subscribe</p>
           <form class="footer-form">
             <div>
-              <label class="footer-order" for="subscribe">Subscribe</label>
-
+              <label class="footer-order-item" for="user-subscribe"></label>
               <input
                 class="footer-order-input"
-                id="subscribe"
-                name="subscribe"
+                id="user-subscribe"
+                name="user-subscribe"
                 placeholder="E-mail"
                 required
                 type="email"
               />
             </div>
-            <div class="footer-order-button">
-              <div class="footer-order-icons">
-                <svg class="footer-order-icons-item" width="24" height="20">
-                  <use href="./images/icons.svg#icon-subscribe"></use>
-                </svg>
-                <button class="footer-button" type="button">Subscribe</button>
-              </div>
-            </div>
+
+            <button class="footer-button" type="button">
+              Subscribe
+              <svg class="footer-order-icons-item" width="24" height="20">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -667,8 +666,10 @@
               name="user-privacy"
               id="user-privacy"
             />
-            <label class="order-form-label" for="user-privacy"
-              >I accept the terms and conditions of the
+            <label class="order-form-label" for="user-privacy">
+              <span class="order-form-label-item"
+                >I accept the terms and conditions of the</span
+              >
               <a href="" class="accent">Privacy Policy</a></label
             >
           </div>
