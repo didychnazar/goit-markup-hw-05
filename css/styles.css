@@ -586,7 +586,7 @@ input::placeholder {
 }
 
 .footer-button {
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   font-size: 16px;
   line-height: 1.5;
@@ -597,7 +597,11 @@ input::placeholder {
   border-radius: 4px;
   padding: 8px 16px 8px 24px;
   display: flex;
-
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -606,7 +610,7 @@ input::placeholder {
   height: 24px;
   position: absolute;
   fill: #fff;
-  margin: 8px 24px 8px 117px;
+  margin-left: 16px;
 }
 
 .backdrop {
