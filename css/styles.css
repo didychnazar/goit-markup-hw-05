@@ -645,7 +645,7 @@ input::placeholder {
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 24px;
+  /* padding: 24px; */
 
   width: 408px;
   min-height: 584px;
@@ -658,6 +658,8 @@ input::placeholder {
   background-color: #fcfcfc;
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  padding: 72px 24px 24px 24px;
 }
 
 .modal-close {
@@ -667,10 +669,10 @@ input::placeholder {
   height: 24px;
   color: #2e2f42;
   cursor: pointer;
+
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: #e7e9fc;
-  border-color: rgba(46, 47, 66, 0.4);
   stroke-width: 1px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -683,11 +685,19 @@ input::placeholder {
   position: absolute;
 }
 
+.modal-close-icons {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal-close:hover,
 .modal-close:focus {
   background-color: #404bbf;
   fill: #fff;
   border: none;
+}
+
+.modal-form-order {
+  margin-bottom: 8px;
 }
 
 .modal .modal-logo {
@@ -698,7 +708,6 @@ input::placeholder {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 16px;
-  margin-top: 24px;
 }
 
 .backdrop:not(.is-open) .modal {
