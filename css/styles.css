@@ -641,13 +641,11 @@ input::placeholder {
   position: absolute;
   top: 50%;
   left: 50%;
-  /* padding: 24px; */
 
   width: 408px;
   min-height: 584px;
   border-radius: 4px;
   transform: translate(-50%, -50%);
-  background: #fcfcfc;
 
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -681,15 +679,20 @@ input::placeholder {
   position: absolute;
 }
 
-.modal-close-icons {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .modal-close:hover,
 .modal-close:focus {
   background-color: #404bbf;
-  fill: #fff;
   border: none;
+  fill: #ffffff;
+}
+
+.modal-close-icons:hover,
+.modal-close-icons:focus {
+  fill: #ffffff;
+}
+
+.modal-close-icons {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-order {
@@ -740,11 +743,6 @@ input::placeholder {
 .order-form-input:focus {
   border: 1px solid #4d5ae5;
 }
-
-/* .order-icons-item:focus,
-.order-icons-item:hover {
-  fill: #4d5ae5;
-} */
 
 input:focus + svg {
   fill: #4d5ae5;
