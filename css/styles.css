@@ -696,6 +696,10 @@ input::placeholder {
   margin-bottom: 8px;
 }
 
+.modal-form-order-comment {
+  margin-bottom: 16px;
+}
+
 .modal .modal-logo {
   font-weight: 500;
   font-size: 16px;
@@ -735,6 +739,11 @@ input::placeholder {
 .order-form-input:hover,
 .order-form-input:focus {
   border: 1px solid #4d5ae5;
+}
+
+.order-icons-item:focus,
+.order-icons-item:hover {
+  fill: #4d5ae5;
 }
 
 .order-form-comment {
@@ -797,7 +806,7 @@ input::placeholder {
 .input-check:checked + .input-check-text > .check-empty {
   background-color: #404bbf;
   border: none;
-  fill: #ffffff;
+  fill: #f4f4fd;
 }
 
 .input-check:focus + .input-check-text > .check-empty {
@@ -828,7 +837,7 @@ input::placeholder {
 }
 
 .order-form-btn {
-  display: flex;
+  display: block;
   border-radius: 4px;
   padding: 16px 32px;
   min-width: 169px;
